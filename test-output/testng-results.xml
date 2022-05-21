@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-21T16:43:55 EET" name="UCLA Health" finished-at="2022-05-21T16:45:34 EET" duration-ms="99131">
+    <groups>
+      <group name="smoke">
+        <method signature="TestCase001_CheckHomePage.ChooseSearchPage()[pri:2, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" name="ChooseSearchPage" class="test_cases.TestCase001_CheckHomePage"/>
+        <method signature="TestCase001_CheckHomePage.reserveAppointment()[pri:4, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" name="reserveAppointment" class="test_cases.TestCase001_CheckHomePage"/>
+        <method signature="TestCase001_CheckHomePage.searchForDoctor()[pri:3, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" name="searchForDoctor" class="test_cases.TestCase001_CheckHomePage"/>
+        <method signature="TestCase001_CheckHomePage.startApplication()[pri:1, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" name="startApplication" class="test_cases.TestCase001_CheckHomePage"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-05-21T16:43:55 EET" name="Test Home Page Functions" finished-at="2022-05-21T16:45:34 EET" duration-ms="99131">
+      <class name="test_cases.TestCase001_CheckHomePage">
+        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:43:55 EET" name="prepareClassProperties" finished-at="2022-05-21T16:43:59 EET" duration-ms="3689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareClassProperties -->
+        <test-method signature="startApplication()[pri:1, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:43:59 EET" name="startApplication" description="Start UCLAHealth Web Application" finished-at="2022-05-21T16:44:17 EET" duration-ms="17716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method signature="ChooseSearchPage()[pri:2, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:44:17 EET" name="ChooseSearchPage" description="Choose to Search Doctors" finished-at="2022-05-21T16:44:22 EET" duration-ms="5512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChooseSearchPage -->
+        <test-method signature="searchForDoctor()[pri:3, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:44:22 EET" name="searchForDoctor" description="Search for Male Doctors" finished-at="2022-05-21T16:44:58 EET" duration-ms="35693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForDoctor -->
+        <test-method signature="reserveAppointment()[pri:4, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:44:58 EET" name="reserveAppointment" description="Fill Patient Data and Reserve Appointment" finished-at="2022-05-21T16:45:32 EET" duration-ms="34613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reserveAppointment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_cases.TestCase001_CheckHomePage@fba92d3]" started-at="2022-05-21T16:45:32 EET" name="tearDown" finished-at="2022-05-21T16:45:34 EET" duration-ms="1804" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EGCA1-0091', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EGCA1-0091', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at test_cases.TestBase.tearDown(TestBase.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_cases.TestCase001_CheckHomePage -->
+    </test> <!-- Test Home Page Functions -->
+  </suite> <!-- UCLA Health -->
+</testng-results>
