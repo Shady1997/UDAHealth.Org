@@ -3,7 +3,6 @@ package test_cases;
 import java.awt.AWTException;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -13,11 +12,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-import pageBase.HomePage;
 import utility.Utility;
 
 public class TestBase {
@@ -62,6 +62,20 @@ public class TestBase {
 		}
 
 		js = (JavascriptExecutor) driver;
+	}
+
+	@Test(priority = 1, groups = "smoke", description = "Start UCLAHealth Web Application")
+	public void startApplication() throws InterruptedException {
+		// Mazimize current window
+		driver.manage().window().maximize();
+		// navigate to website
+		driver.get("https://www.uclahealth.org/");
+		// wait for 5 sec
+		Thread.sleep(2000);
+		// verify login successfully
+		Assert.assertEquals(driver.getPageSource().contains("Your best care begins at UCLA Health"), true);
+		// take screenshot to Home page
+		Utility.captureScreenshot(driver, "HomePage");
 	}
 
 	@AfterTest

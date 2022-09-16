@@ -36,8 +36,8 @@ public class AppointmentPage {
 	}
 
 	public void getTimeToCall() {
-		Select callTime=new Select(timeToCall);
-		callTime.selectByIndex(0);
+		Select callTime = new Select(timeToCall);
+		callTime.selectByIndex(1);
 	}
 
 	public void getZipCode() {
@@ -45,8 +45,9 @@ public class AppointmentPage {
 	}
 
 	public void getGender() {
-		Select selectGender=new Select(gender);
+		Select selectGender = new Select(gender);
 		selectGender.selectByIndex(1);
+//		gender.click();
 	}
 
 	public void getBirthday() {
@@ -62,8 +63,8 @@ public class AppointmentPage {
 	}
 
 	public void getIssuanceType() {
-		Select issuance=new Select(issuanceType);
-		issuance.selectByIndex(0);
+		Select issuance = new Select(issuanceType);
+		issuance.selectByIndex(1);
 	}
 
 	public void getReferringDoctorName() {

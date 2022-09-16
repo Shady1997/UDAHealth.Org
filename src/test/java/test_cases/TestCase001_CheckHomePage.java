@@ -5,7 +5,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.Set;
 
-import org.testng.Assert;
+//import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageBase.AppointmentPage;
@@ -20,20 +20,6 @@ public class TestCase001_CheckHomePage extends TestBase {
 	AppointmentPage appointmentPage;
 	String currentHandle;
 	Robot r;
-
-	@Test(priority = 1, groups = "smoke", description = "Start UCLAHealth Web Application")
-	public void startApplication() throws InterruptedException {
-		// Mazimize current window
-		driver.manage().window().maximize();
-		// navigate to website
-		driver.get("https://www.uclahealth.org/");
-		// wait for 5 sec
-		Thread.sleep(2000);
-		// verify login successfully
-		Assert.assertEquals(driver.getPageSource().contains("Your best care begins at UCLA Health"), true);
-		// take screenshot to Home page
-		Utility.captureScreenshot(driver, "HomePage");
-	}
 
 	@Test(priority = 2, groups = "smoke", description = "Choose to Search Doctors")
 	public void ChooseSearchPage() throws InterruptedException {
@@ -74,13 +60,16 @@ public class TestCase001_CheckHomePage extends TestBase {
 		appointmentPage.getPhoneNumber();
 		appointmentPage.getAltPhoneNumber();
 		js.executeScript("window.scrollBy(0,300)", "");
+		Thread.sleep(9000);
 		appointmentPage.getTimeToCall();
 		appointmentPage.getEmailAddress();
 		appointmentPage.getZipCode();
+		Thread.sleep(3000);
 		appointmentPage.getGender();
 		appointmentPage.getBirthday();
 		appointmentPage.getReason();
 		appointmentPage.getFirstTimeVisist();
+		Thread.sleep(3000);
 		appointmentPage.getIssuanceType();
 		js.executeScript("window.scrollBy(0,400)", "");
 		appointmentPage.getReferringDoctorName();

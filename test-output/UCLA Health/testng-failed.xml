@@ -10,10 +10,7 @@
       <class name="test_cases.TestCase001_CheckHomePage">
         <methods>
           <include name="prepareClassProperties"/>
-          <include name="ChooseSearchPage"/>
-          <include name="searchForDoctor"/>
           <include name="reserveAppointment"/>
-          <include name="startApplication"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- test_cases.TestCase001_CheckHomePage -->
