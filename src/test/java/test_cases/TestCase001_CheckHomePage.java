@@ -8,9 +8,9 @@ import java.util.Set;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageBase.AppointmentPage;
-import pageBase.HomePage;
-import pageBase.ProvidersPage;
+import pages.AppointmentPage;
+import pages.HomePage;
+import pages.ProvidersPage;
 import utility.Utility;
 
 public class TestCase001_CheckHomePage extends TestBase {

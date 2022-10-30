@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [UCLA Health]" parallel="tests">
+  <listeners>
+    <listener class-name="reports.MyListener"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Test Home Page Functions(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test_cases.TestCase001_CheckHomePage">
+        <methods>
+          <include name="prepareClassProperties"/>
+          <include name="ChooseSearchPage"/>
+          <include name="searchForDoctor"/>
+          <include name="reserveAppointment"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test_cases.TestCase001_CheckHomePage -->
+    </classes>
+  </test> <!-- Test Home Page Functions(failed) -->
+</suite> <!-- Failed suite [UCLA Health] -->

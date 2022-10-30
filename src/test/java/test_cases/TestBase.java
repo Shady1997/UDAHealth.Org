@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,14 +34,16 @@ public class TestBase {
 	@Parameters("browser")
 	@BeforeTest
 	public void prepareClassProperties(String browser) throws IOException, AWTException {
-		readProperty = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\generalProperties.properties");
-		prop = new Properties();
-		prop.load(readProperty);
+		//		readProperty = new FileInputStream(
+//				System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\generalProperties.properties");
+//		prop = new Properties();
+//		prop.load(readProperty);
 		options = new ChromeOptions();
 		options.addArguments("--start-maximized");
 		options.addArguments("--disable-web-security");
 		options.addArguments("--no-proxy-server");
+		// to run headless test
+//		options.addArguments("--headless");
 
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
@@ -49,12 +53,16 @@ public class TestBase {
 		options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 
 		if (browser.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + prop.getProperty("firefoxdriver"));
+//			System.setProperty("webdriver.gecko.driver",
+//					System.getProperty("user.dir") + prop.getProperty("firefoxdriver"));
+			// use webdrivermanager
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + prop.getProperty("chromedriver"));
+//			System.setProperty("webdriver.chrome.driver",
+//					System.getProperty("user.dir") + prop.getProperty("chromedriver"));
+			// use webdrivermanager
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 		} else {
 			throw new IllegalArgumentException("Invalid browser value!!");
@@ -62,6 +70,9 @@ public class TestBase {
 		}
 
 		js = (JavascriptExecutor) driver;
+		// Set Driver wait
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 	}
 
 	@Test(priority = 1, groups = "smoke", description = "Start UCLAHealth Web Application")
@@ -81,12 +92,5 @@ public class TestBase {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
-		String report = System.getProperty("user.dir") + "\\test-output\\index.html";
-		driver.get(report);
 	}
-
-	public static void getScreenshotOnFailure() {
-		Utility.captureScreenshot(driver, "fail" + java.time.LocalTime.now());
-	}
-
 }
