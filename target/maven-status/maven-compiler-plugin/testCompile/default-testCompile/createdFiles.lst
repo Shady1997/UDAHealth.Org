@@ -1,11 +1,13 @@
+pages\ProvidersPage.class
 utility\ExcelUtils.class
+pages\HomePage.class
 test_cases\TestCase001_CheckHomePage.class
 test_cases\TestBase.class
 reports\MyListener.class
 testNGListener\Listener.class
 js_utilities\JSExecuter.class
 utility\ExcelUtility.class
-pageBase\AppointmentPage.class
+pages\AppointmentPage.class
 utility\Utility.class
-pageBase\ProvidersPage.class
-pageBase\HomePage.class
+database\DatabaseConnection.class
+pages\PageBase.class
