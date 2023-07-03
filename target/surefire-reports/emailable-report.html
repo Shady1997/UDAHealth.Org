@@ -9,103 +9,105 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">UCLA Health</th></tr>
-<tr><td><a href="#t0">Test Home Page Functions</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">69,257</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test Home Page Functions</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">85,290</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UCLA Health</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Home Page Functions &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">test_cases.TestCase001_CheckHomePage</td><td><a href="#m0">ChooseSearchPage</a></td><td rowspan="1">1676045764672</td><td rowspan="1">10174</td></tr><tr class="failedeven"><td><a href="#m1">reserveAppointment</a></td><td rowspan="1">1676045784927</td><td rowspan="1">10051</td></tr><tr class="failedeven"><td><a href="#m2">searchForDoctor</a></td><td rowspan="1">1676045774868</td><td rowspan="1">10055</td></tr><tr><th colspan="4">Test Home Page Functions &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test_cases.TestCase001_CheckHomePage</td><td><a href="#m3">startApplication</a></td><td rowspan="1">1676045754782</td><td rowspan="1">9879</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UCLA Health</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Home Page Functions &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">test_cases.TestCase001_CheckHomePage</td><td><a href="#m0">prepareClassProperties</a></td><td rowspan="1">1688314575374</td><td rowspan="1">84945</td></tr><tr><th colspan="4">Test Home Page Functions &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">test_cases.TestCase001_CheckHomePage</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1688314660640</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Home Page Functions &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">test_cases.TestCase001_CheckHomePage</td><td><a href="#m2">ChooseSearchPage</a></td><td rowspan="1">1688314660614</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m3">reserveAppointment</a></td><td rowspan="1">1688314660622</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m4">searchForDoctor</a></td><td rowspan="1">1688314660619</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">startApplication</a></td><td rowspan="1">1688314660599</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test Home Page Functions</h2><h3 id="m0">test_cases.TestCase001_CheckHomePage#ChooseSearchPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Search Now&apos;]&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<h2>Test Home Page Functions</h2><h3 id="m0">test_cases.TestCase001_CheckHomePage#prepareClassProperties</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//a[normalize-space()=&apos;Search Now&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at pages.HomePage.searchDoctors(HomePage.java:21)
-	at test_cases.TestCase001_CheckHomePage.ChooseSearchPage(TestCase001_CheckHomePage.java:27)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
+System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test_cases.TestCase001_CheckHomePage#reserveAppointment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;fe344&apos;]&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test_cases.TestCase001_CheckHomePage#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test_cases.TestCase001_CheckHomePage#ChooseSearchPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//input[@id=&apos;fe344&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AppointmentPage.getFirstName(AppointmentPage.java:120)
-	at test_cases.TestCase001_CheckHomePage.reserveAppointment(TestCase001_CheckHomePage.java:58)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
+System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test_cases.TestCase001_CheckHomePage#searchForDoctor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label&apos;]//input[@id=&apos;edit-s&apos;]&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test_cases.TestCase001_CheckHomePage#reserveAppointment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//div[@class=&apos;js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label&apos;]//input[@id=&apos;edit-s&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.ProvidersPage.searchField(ProvidersPage.java:25)
-	at test_cases.TestCase001_CheckHomePage.searchForDoctor(TestCase001_CheckHomePage.java:35)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
+System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test_cases.TestCase001_CheckHomePage#startApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test_cases.TestCase001_CheckHomePage#searchForDoctor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test_cases.TestCase001_CheckHomePage#startApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;EGCA1-0091&apos;, ip: &apos;192.168.1.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

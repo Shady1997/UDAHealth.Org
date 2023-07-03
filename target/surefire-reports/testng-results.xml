@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
+<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="UCLA Health" duration-ms="69257" started-at="2023-02-10T18:15:26 EET" finished-at="2023-02-10T18:16:36 EET">
+  <suite name="UCLA Health" duration-ms="85290" started-at="2023-07-02T18:16:15 EET" finished-at="2023-07-02T18:17:40 EET">
     <groups>
       <group name="smoke">
         <method signature="TestBase.startApplication()[pri:1, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="startApplication" class="test_cases.TestBase"/>
@@ -11,9 +11,9 @@
         <method signature="TestCase001_CheckHomePage.reserveAppointment()[pri:4, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="reserveAppointment" class="test_cases.TestCase001_CheckHomePage"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test Home Page Functions" duration-ms="69257" started-at="2023-02-10T18:15:26 EET" finished-at="2023-02-10T18:16:36 EET">
+    <test name="Test Home Page Functions" duration-ms="85290" started-at="2023-07-02T18:16:15 EET" finished-at="2023-07-02T18:17:40 EET">
       <class name="test_cases.TestCase001_CheckHomePage">
-        <test-method status="PASS" signature="prepareClassProperties(java.lang.String)[pri:0, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="prepareClassProperties" is-config="true" duration-ms="27721" started-at="2023-02-10T18:15:26 EET" finished-at="2023-02-10T18:15:54 EET">
+        <test-method status="FAIL" signature="prepareClassProperties(java.lang.String)[pri:0, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="prepareClassProperties" is-config="true" duration-ms="84945" started-at="2023-07-02T18:16:15 EET" finished-at="2023-07-02T18:17:40 EET">
           <params>
             <param index="0">
               <value>
@@ -21,71 +21,135 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareClassProperties -->
-        <test-method status="PASS" signature="startApplication()[pri:1, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="startApplication" duration-ms="9879" started-at="2023-02-10T18:15:54 EET" description="Start UCLAHealth Web Application" finished-at="2023-02-10T18:16:04 EET">
+        <test-method status="SKIP" signature="startApplication()[pri:1, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="startApplication" duration-ms="0" started-at="2023-07-02T18:17:40 EET" description="Start UCLAHealth Web Application" finished-at="2023-07-02T18:17:40 EET">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method status="FAIL" signature="ChooseSearchPage()[pri:2, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="ChooseSearchPage" duration-ms="10174" started-at="2023-02-10T18:16:04 EET" description="Choose to Search Doctors" finished-at="2023-02-10T18:16:14 EET">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="ChooseSearchPage()[pri:2, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="ChooseSearchPage" duration-ms="1" started-at="2023-07-02T18:17:40 EET" description="Choose to Search Doctors" finished-at="2023-07-02T18:17:40 EET">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Search Now']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//a[normalize-space()='Search Now']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9]]>
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Search Now']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//a[normalize-space()='Search Now']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at pages.HomePage.searchDoctors(HomePage.java:21)
-at test_cases.TestCase001_CheckHomePage.ChooseSearchPage(TestCase001_CheckHomePage.java:27)
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
 at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
@@ -96,68 +160,44 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChooseSearchPage -->
-        <test-method status="FAIL" signature="searchForDoctor()[pri:3, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="searchForDoctor" duration-ms="10055" started-at="2023-02-10T18:16:14 EET" description="Search for Male Doctors" finished-at="2023-02-10T18:16:24 EET">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="searchForDoctor()[pri:3, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="searchForDoctor" duration-ms="0" started-at="2023-07-02T18:17:40 EET" description="Search for Male Doctors" finished-at="2023-07-02T18:17:40 EET">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label']//input[@id='edit-s']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//div[@class='js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label']//input[@id='edit-s']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9]]>
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label']//input[@id='edit-s']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//div[@class='js-form-item form-item js-form-type-search-api-autocomplete form-item-s js-form-item-s form-no-label']//input[@id='edit-s']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at pages.ProvidersPage.searchField(ProvidersPage.java:25)
-at test_cases.TestCase001_CheckHomePage.searchForDoctor(TestCase001_CheckHomePage.java:35)
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
 at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
@@ -168,68 +208,44 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchForDoctor -->
-        <test-method status="FAIL" signature="reserveAppointment()[pri:4, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="reserveAppointment" duration-ms="10051" started-at="2023-02-10T18:16:24 EET" description="Fill Patient Data and Reserve Appointment" finished-at="2023-02-10T18:16:34 EET">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="reserveAppointment()[pri:4, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="reserveAppointment" duration-ms="1" started-at="2023-07-02T18:17:40 EET" description="Fill Patient Data and Reserve Appointment" finished-at="2023-07-02T18:17:40 EET">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='fe344']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//input[@id='fe344']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9]]>
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='fe344']"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50660/devtools/browser/97f66788-851f-4ddd-b04b-b2a239c2433d
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'EGCA1-0091', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5204b20b964ae3028a067bf6984a9df9, findElement {using=xpath, value=//input[@id='fe344']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:62341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62341/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5204b20b964ae3028a067bf6984a9df9
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at pages.AppointmentPage.getFirstName(AppointmentPage.java:120)
-at test_cases.TestCase001_CheckHomePage.reserveAppointment(TestCase001_CheckHomePage.java:58)
+System info: host: 'EGCA1-0091', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at test_cases.TestBase.prepareClassProperties(TestBase.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
 at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
@@ -240,11 +256,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reserveAppointment -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="tearDown" is-config="true" duration-ms="1258" started-at="2023-02-10T18:16:34 EET" finished-at="2023-02-10T18:16:36 EET">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test_cases.TestCase001_CheckHomePage@5f71c76a]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-07-02T18:17:40 EET" finished-at="2023-07-02T18:17:40 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
